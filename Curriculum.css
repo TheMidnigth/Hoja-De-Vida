@@ -90,22 +90,57 @@
 }
 
 /* Section main__information */
+.main__information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
 
 .information__content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 8px;
+    
 }
 
-.content__item{
-    
-}
-    
+
 .item--experiencia {
     grid-column: span 2 / span 2;
     grid-row: span 8 / span 8;
 }
+
+.item__experencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.experencia__presentacion{
+    display: flex;
+    gap: 5rem;
+    margin: 0 0px 0 0;
+}
+
+.experencia__presentacion .presentacion__title{
+    font: 600 40px "Poppins";
+    color: var(--colorSecundario);
+    background-color: var(--colorPrincipal);
+    padding: 0px 25px;
+    
+}
+
+.experencia__presentacion .presentacion__number{
+    font: 600 40px "Noto Sans";
+    color: var(--colorPrincipal);
+}
+
+
+
+
 
 .item--education {
     grid-column: span 2 / span 2;
@@ -113,9 +148,93 @@
     grid-column-start: 3;
 }
 
+.item__etapas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.etapas__presentacion{
+    display: flex;
+    gap: 5rem;
+}
+
+.etapas__presentacion .presentacion__title{
+    font: 600 40px "Poppins";
+    color: var(--colorSecundario);
+    background-color: var(--colorPrincipal);
+    padding: 0px 25px;
+}
+
+.etapas__presentacion .presentacion__number{
+    font: 600 40px "Noto Sans";
+    color: var(--colorPrincipal);
+}
+
+
+
 .item--contacto {
     grid-row: span 3 / span 3;
     grid-column-start: 5;
+}
+
+.item__icon{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.icon__presentacion{
+    display: flex;
+    gap: 5rem;
+}
+
+.icon__presentacion .presentacion__title{
+    font: 600 40px "Poppins";
+    color: var(--colorSecundario);
+    background-color: var(--colorPrincipal);
+    padding: 0px 25px;
+}
+
+.icon__presentacion .presentacion__number{
+    font: 600 40px "Noto Sans";
+    color: var(--colorPrincipal);
+}
+
+.icon__opcion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.icon__cuadro {
+    background-color: var(--colorPrincipal);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.opcion__title {
+    margin: 0;
+    font: 600 17px "Poppins";
+    color: var(--colorCuartario);
+}
+
+.opcion__number {
+    margin: 0;
+    font: 600 17px "Montserrat";
 }
 
 .item--idioma {
@@ -124,10 +243,86 @@
     grid-row-start: 4;
 }
 
+.item__speak{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.speak__presentacion{
+    display: flex;
+    gap: 5rem;
+}
+
+
+.speak__presentacion .presentacion__title{
+    font: 600 40px "Poppins";
+    color: var(--colorSecundario);
+    background-color: var(--colorPrincipal);
+    padding: 0px 25px;
+}
+
+
+.speak__presentacion .presentacion__number{
+    font: 600 40px "Noto Sans";
+    color: var(--colorPrincipal);
+}
+
+
+.speak__item .item__bandera{
+    display: flex;
+    gap: 20px;
+}
+
+.speak__item .item__bandera img{
+    width: 100%;
+    max-width: 50px;
+}
+
+.speak__item .item__bandera  .bandera__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 500 20px "Noto Sans";
+}
+
 .item--habilidades {
     grid-row: span 3 / span 3;
     grid-column-start: 5;
     grid-row-start: 6;
+}
+
+.item__skill{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill__presentacion{
+    display: flex;
+    gap: 5rem;
+    margin: 0 0 20px 0;
+}
+
+.skill__presentacion .presentacion__title{
+    font: 600 40px "Poppins";
+    color: var(--colorSecundario);
+    background-color: var(--colorPrincipal);
+    padding: 0px 25px;
+}
+
+.skill__presentacion .presentacion__number{
+    font: 600 40px "Noto Sans";
+    color: var(--colorPrincipal);
+}
+
+.skill__description i{
+    color: var(--colorCuartario);
+}
+
+.skill__description .description__text{
+    margin-left: 10px;
+    font: 600 20px "Noto Sans";
 }
 
 .item--hobbies {
@@ -136,9 +331,11 @@
     grid-row-start: 5;
 }
 
+
 .item--tecnologias {
     grid-row: span 4 / span 4;
     grid-column-start: 4;
     grid-row-start: 5;
 }
-        
+
+
