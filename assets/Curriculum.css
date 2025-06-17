@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorPrincipal: #48f;
+    --colorPrincipal2:#88aaff;
+    --colorSecundario: #ffffff;
+    --colorTerciera: #000000;
+    --colorCuartario: #090e90;
+    --colorQuintario: #f9f9f6;
+}
+
+/* Section aboutMe */
+.main__aboutMe {
+    background-color: var(--colorPrincipal2);
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe__perfil {
+    background-color: rgba(250, 250, 250, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    margin: -100px 0 0 0;
+}
+
+.perfil__information {
+    display: flex;
+    gap: 5rem;
+    background-color: var(--colorQuintario);
+    border-radius: 15px;
+    padding: 30px;
+    height: 520px;
+}
+
+.perfil__information .information__img img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 50px;
+
+}
+
+.information__description {
+    width: 100%;
+    max-width: 810px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.information__description .description__title {
+    font: 700 75px "Poppins";
+    text-transform: capitalize;
+    margin: -20px 0 20px 0;
+}
+
+.information__description .description__soy {
+    display: inline-block;
+    font: 700 70px "Poppins";
+
+}
+
+.information__description .description__soy span {
+    color: var(--colorSecundario);
+    background-color: var(--colorPrincipal);
+    padding: 10px 15px;
+    border-radius: 75px;
+    font-size: 35px;
+    margin: 0 0 0 40px;
+    position: absolute;
+    top: 2.5rem;
+
+}
+
+
+.information__description .description__text {
+    font: 600 20px/1.5 "Montserrat";
+}
+
+/* Section main__information */
+
+.information__content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 8px;
+}
+
+.content__item{
+    
+}
+    
+.item--experiencia {
+    grid-column: span 2 / span 2;
+    grid-row: span 8 / span 8;
+}
+
+.item--education {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+}
+
+.item--contacto {
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+}
+
+.item--idioma {
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+
+.item--habilidades {
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 6;
+}
+
+.item--hobbies {
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.item--tecnologias {
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+        
