@@ -5,17 +5,20 @@
 }
 
 :root {
-    --colorPrincipal: #48f;
-    --colorPrincipal2:#88aaff;
+    --colorPrincipal: #7cf03d;
+    --colorPrincipal2: #88aaff;
     --colorSecundario: #ffffff;
     --colorTerciera: #000000;
     --colorCuartario: #090e90;
     --colorQuintario: #f9f9f6;
+    --colorSextario:#1f242d;
 }
 
-body{
-    background-color: var(--colorPrincipal2);
+body {
+    background-color: var(--colorSextario);
 }
+
+
 
 /* Section aboutMe */
 .main__aboutMe {
@@ -27,9 +30,7 @@ body{
 }
 
 .aboutMe__perfil {
-    background-color: rgba(250, 250, 250, 0.5);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: #323946;
     padding: 30px;
     border-radius: 20px;
     margin: -100px 0 0 0;
@@ -38,10 +39,9 @@ body{
 .perfil__information {
     display: flex;
     gap: 5rem;
-    background-color: var(--colorQuintario);
     border-radius: 20px;
-    padding: 30px;
-    height: 520px;
+    padding: 65px;
+    height: 530px;
 }
 
 .perfil__information .information__img img {
@@ -67,11 +67,13 @@ body{
     font: 700 75px "Poppins";
     text-transform: capitalize;
     margin: -20px 0 20px 0;
+    color: var(--colorSecundario);
 }
 
 .information__description .description__soy {
     display: inline-block;
     font: 700 70px "Poppins";
+    color: var(--colorSecundario);
 
 }
 
@@ -83,17 +85,18 @@ body{
     font-size: 35px;
     margin: 0 0 0 40px;
     position: absolute;
-    top: 2.5rem;
+    top: 0.5rem;
 
 }
 
 
 .information__description .description__text {
     font: 600 20px/1.5 "Montserrat";
+    color: var(--colorQuintario);
 }
 
 /* Section main__information */
-.main__information{
+.main__information {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,21 +106,21 @@ body{
 .information__content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 20px;
-    padding: 0 40px;
+    padding: 0 40px 50px 40px;
 }
 
-.content__item{
-    background-color:var(--colorSecundario) ;
+.content__item {
+    background: #323946;
     border-radius: 20px;
-    padding:20px 0 0 0;
+    padding: 20px 0 0 0;
     cursor: pointer;
     transform: translateY(0px);
     transition: transform .7s ease;
 }
 
-.content__item:hover{
+.content__item:hover {
     transform: translateY(-10px);
 }
 
@@ -126,7 +129,7 @@ body{
     grid-row: span 4 / span 4;
 }
 
-.item__experencia{
+.item__experencia {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,7 +137,7 @@ body{
     gap: 30px;
 }
 
-.experencia__presentacion{
+.experencia__presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,65 +145,68 @@ body{
 
 }
 
-.experencia__presentacion .presentacion__title{
+.experencia__presentacion .presentacion__title {
     font: 600 40px "Poppins";
     color: var(--colorSecundario);
-    background-color: var(--colorPrincipal);
     padding: 0px 25px;
-    
+
 }
 
 
-.experiencia__description{
+.experiencia__description {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.description__item .item__fecha{
-    color: var(--colorCuartario);
+.description__item .item__fecha {
+    color: var(--colorPrincipal);
     font: 800 16px "Noto Sans";
 }
 
 .description__item .item__title {
     font: 700 25px "Poppins";
-    color: var(--colorPrincipal);
+    color: var(--colorSecundario);
     margin: 2px 0 2px 0;
 
 }
 
-.description__item .item__lugar{
-    font: 600 18px "Poppins";
+.description__item .item__lugar {
+    font: 400 18px "Poppins";
+    color: var(--colorQuintario);
 }
 
-.description__item .item__lugar i{
+.description__item .item__lugar i {
     font-size: 25px;
-    color: var(--colorCuartario);
+    color: var(--colorPrincipal);
+    margin: 0 10px 0 0;
 }
 
-.description__item .item__subtitulo{
+.description__item .item__subtitulo {
     margin: 10px 0 10px 0;
     color: var(--colorPrincipal);
     font: 600 20px "Poppins";
 }
 
 
-.description__item .item__text{
+.description__item .item__text {
     font: 500 17px/1.4 "Montserrat";
     margin: 2px 0 0 0;
     width: 450px;
+    color: var(--colorQuintario);
 }
 
 .description__item .item__text i {
-    color: var(--colorCuartario);
+    color: var(--colorPrincipal);
 }
+
 .item--education {
     grid-column: span 2 / span 2;
     grid-row: span 3 / span 3;
     grid-column-start: 3;
 }
 
-.item__etapas{
+.item__etapas {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,22 +214,21 @@ body{
     gap: 30px;
 }
 
-.etapas__presentacion{
+.etapas__presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.etapas__presentacion .presentacion__title{
+.etapas__presentacion .presentacion__title {
     font: 600 40px "Poppins";
     color: var(--colorSecundario);
-    background-color: var(--colorPrincipal);
     padding: 0px 25px;
 }
 
 
-.education__description{
+.education__description {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -235,23 +240,22 @@ body{
     grid-column-start: 5;
 }
 
-.item__icon{
+.item__icon {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.icon__presentacion{
+.icon__presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
 }
 
-.icon__presentacion .presentacion__title{
+.icon__presentacion .presentacion__title {
     font: 600 40px "Poppins";
     color: var(--colorSecundario);
-    background-color: var(--colorPrincipal);
     padding: 0px 25px;
 }
 
@@ -281,12 +285,13 @@ body{
 .opcion__title {
     margin: 0;
     font: 600 17px "Poppins";
-    color: var(--colorCuartario);
+    color: var(--colorPrincipal);
 }
 
 .opcion__number {
     margin: 0;
     font: 600 17px "Montserrat";
+    color: var(--colorQuintario);
 }
 
 .item--hobbies {
@@ -296,51 +301,51 @@ body{
     padding: 20px 20px 0 20px;
 }
 
-.item__hoobies{
+.item__hoobies {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.hoobies__presentacion{
+.hoobies__presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
 }
 
-.hoobies__presentacion .presentacion__title{
+.hoobies__presentacion .presentacion__title {
     font: 600 40px "Poppins";
     color: var(--colorSecundario);
-    background-color: var(--colorPrincipal);
     padding: 0px 25px;
 }
 
-.hoobies__presentacion .presentacion__number{
+.hoobies__presentacion .presentacion__number {
     font: 600 40px "Noto Sans";
     color: var(--colorPrincipal);
 }
 
-.hobbies__grid{
+.hobbies__grid {
     margin: 20px 0 0 0;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.hobbies__grid .hobbies__button{
-    background-color: var(--colorPrincipal);
-    color: var(--colorSecundario);
+.hobbies__grid .hobbies__button {
     display: flex;
     justify-content: center;
     padding: 15px 0;
     align-items: center;
     border-radius: 15px;
+    background-color: #3c4455;
+    color: var(--colorSecundario);
 }
 
-.hobbies__grid .hobbies__button i{
-    font-size: 40px;
+.hobbies__grid .hobbies__button i {
+    font-size: 50px;
 }
+
 
 
 .item--habilidades {
@@ -349,13 +354,13 @@ body{
     grid-row-start: 3;
 }
 
-.item__skill{
+.item__skill {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.skill__presentacion{
+.skill__presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,71 +368,73 @@ body{
     margin: 0 0 20px 0;
 }
 
-.skill__presentacion .presentacion__title{
+.skill__presentacion .presentacion__title {
     font: 600 40px "Poppins";
     color: var(--colorSecundario);
-    background-color: var(--colorPrincipal);
     padding: 0px 25px;
 }
 
-.item__skill .skill__description{
+.item__skill .skill__description {
     padding: 0 0 0 40px;
 }
 
 
-.skill__description i{
-    color: var(--colorCuartario);
+.skill__description i {
+    color: var(--colorPrincipal);
 }
 
-.skill__description .description__text{
+.skill__description .description__text {
     margin-left: 10px;
     font: 600 20px "Noto Sans";
+    color: var(--colorQuintario);
 }
 
 .item--tecnologias {
     grid-row: span 1 / span 1;
     grid-column: span 3 / span 3;
-    grid-column-start: 3; /* 4 */
-    grid-row-start: 4; /* 5 */
+    grid-column-start: 3;
+    /* 4 */
+    grid-row-start: 4;
+    /* 5 */
     padding: 20px 30px 20px 30px;
 }
 
-.item__tecnologias{
+.item__tecnologias {
     display: flex;
     flex-direction: column;
 }
 
-.tecnologias__presentacion{
+.tecnologias__presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
 }
 
-.tecnologias__presentacion .presentacion__title{
+.tecnologias__presentacion .presentacion__title {
     font: 600 40px "Poppins";
     color: var(--colorSecundario);
-    background-color: var(--colorPrincipal);
     padding: 0px 25px;
 }
 
 
-.tecnologias__grid{
+.tecnologias__grid {
     margin: 20px 0 0 0;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.tecnologias__grid .tecnologias__icon{
-    background-color: var(--colorPrincipal);
-    color: var(--colorSecundario);
+.tecnologias__grid .tecnologias__icon {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    background-color: #3c4455;
+    color: var(--colorSecundario);
 }
 
-.tecnologias__grid .tecnologias__icon i{
+.tecnologias__grid .tecnologias__icon i {
     font-size: 80px;
 }
+
